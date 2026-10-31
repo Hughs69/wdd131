@@ -1,11 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals. Personal homepage of Hubert Abedi Amoah from Ghana, featuring my background, interests, technology journey, and web development resources.">
+
+    <meta name="author" content="Hubert Abedi Amoah">
+
+    <title>WDD 131 Dynamic Web Fundamentals Hubert Abedi Amoah</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Hughes</h1>
+
+    <header>
+        <span id="course-title">WDD 131 Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Profile</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Hubert Abedi Amoah</h1>
+
+        <div class="cards">
+
+            <section class="card about">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+
+                    <img class="profile-photo"
+                         src="images/hubert.jpg"
+                         alt="Portrait of Hubert Abedi Amoah">
+
+                    <p>
+                        My name is Hubert Abedi Amoah, and I am from Accra,
+                        Ghana. I am currently a BYU-Pathway Worldwide student
+                        with an interest in technology and web development.
+                        I enjoy learning new skills, solving problems, and
+                        discovering how technology can make everyday life
+                        easier. My goal is to become a computer science
+                        professional and use my knowledge to create solutions
+                        that will benefit people in my community.
+                    </p>
+
+                </div>
+
+                <h3>Accra, Ghana</h3>
+
+                <div class="location-content">
+
+                    <figure>
+                        <img src="images/ghana-flag.png"
+                             alt="Official flag of Ghana">
+
+                        <figcaption>Official Flag of Ghana</figcaption>
+                    </figure>
+
+                    <p>
+                        Ghana is a beautiful country in West Africa known
+                        for its rich culture, history, hospitality, and
+                        natural resources. Accra, its capital city, is a
+                        vibrant center of business, education, and
+                        technology. Ghana is also known for its
+                        independence in 1957 and its strong cultural
+                        traditions.
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="card resources">
+
+                <h2>Web Dev Resources</h2>
+
+                <div class="resource-content">
+
+                    <ul>
+                        <li>
+                            <a href="https://dev.to/" target="_blank" rel="noopener noreferrer">
+                                Dev.to Community
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">
+                                Smashing Magazine
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">
+                                CSS Tricks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                                W3 Schools
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">
+                                Udemy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.lipsum.com/" target="_blank" rel="noopener noreferrer">
+                                Lorem Ipsum
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="currentyear"></span> 🍁 Hubert Amoah 🍁 Ghana, Accra
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

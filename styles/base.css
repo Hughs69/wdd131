@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #1d4e70;
+    --secondary-color: #303030;
+    --accent-color: #f2b544;
+    --background-color: #ffffff;
+    --text-color: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    max-width: 960px;
+    margin: 1rem auto 0;
+}
+
+#course-title {
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #222222;
+}
+
+/* Main content */
+
+main {
+    max-width: 860px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.7rem;
+}
+
+.card {
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+}
+
+/* About Me section */
+
+.about-content {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.about-content p,
+.location-content p {
+    font-size: 0.95rem;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 155px;
+    object-fit: cover;
+    border: 1px solid #aaa;
+}
+
+.about h3 {
+    text-align: center;
+    margin: 0.2rem 2rem 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.location-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.location-content figure {
+    flex: 0 0 125px;
+    text-align: center;
+}
+
+.location-content img {
+    width: 125px;
+    height: 85px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.location-content figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* Web Development Resources */
+
+.resource-content {
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.resource-content ul {
+    padding-left: 1.2rem;
+}
+
+.resource-content li {
+    margin-bottom: 0.3rem;
+}
+
+.resource-content a {
+    color: #0000ee;
+}
+
+.resource-content a:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+
+footer {
+    max-width: 960px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.2rem;
+}
+
+#lastModified {
+    color: #ffffff;
+    font-size: 0.85rem;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .location-content {
+        flex-direction: column;
+    }
+
+    .resource-content {
+        margin-top: 1rem;
+    }
+
+    main {
+        padding: 0 0.7rem;
+    }
+}
