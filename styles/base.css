@@ -24,7 +24,8 @@ body {
 /* Header */
 
 header {
-    max-width: 960px;
+    width: 95%;
+    max-width: 1600px;
     margin: 1rem auto 0;
 }
 
@@ -64,7 +65,8 @@ nav a:hover {
 /* Main content */
 
 main {
-    max-width: 860px;
+    width: 90%;
+    max-width: 1600px;
     margin: 1.5rem auto;
     padding: 0 1rem;
 }
@@ -174,7 +176,8 @@ h1 {
 /* Footer */
 
 footer {
-    max-width: 960px;
+    width: 95%;
+    max-width: 1600px;
     margin: 1rem auto;
     padding: 1rem;
     background-color: var(--primary-color);
