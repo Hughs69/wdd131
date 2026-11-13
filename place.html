@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ghana, its geography, population, culture, and weather.">
+    <meta name="author" content="Hubert Abedi Amoah">
+
+    <title>Ghana | Place Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+
+            <!-- Responsive Hero Image -->
+            <picture class="hero-picture">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/ghana-small.webp"
+                    type="image/webp">
+
+                <source
+                    media="(min-width: 601px)"
+                    srcset="images/ghana-large.webp"
+                    type="image/webp">
+
+                <img
+                    src="images/ghana-large.webp"
+                    alt="Beautiful landscape of Ghana"
+                    class="hero-image">
+            </picture>
+
+            <!-- Data Section -->
+            <section class="data">
+                <h2>Data</h2>
+
+                <div class="data-content">
+                    <p><span>Area:</span> <span>238,533 sq km</span></p>
+                    <p><span>Population:</span> <span>Approximately 34 million</span></p>
+                    <p><span>Capital:</span> <span>Accra</span></p>
+                    <p><span>Languages:</span> <span>English, Akan, Ewe, Ga</span></p>
+                    <p><span>Currency:</span> <span>Ghanaian Cedi (GHS)</span></p>
+                    <p><span>Time Zone:</span> <span>GMT (UTC+0)</span></p>
+                    <p><span>Calling Code:</span> <span>+233</span></p>
+                    <p><span>Internet TLD:</span> <span>.gh</span></p>
+                </div>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <img
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather"
+                    class="weather-icon">
+
+                <div class="weather-content">
+                    <p><span>Temperature:</span> <span id="temperature">29</span> °C</p>
+                    <p><span>Conditions:</span> <span>Partly Cloudy</span></p>
+                    <p><span>Wind:</span> <span id="wind-speed">12</span> km/h</p>
+                    <p><span>Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            | Hubert Abedi Amoah | Ghana
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="last-modified"></span>
+        </p>
+    </footer>
+</body>
+</html>

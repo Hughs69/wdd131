@@ -1,0 +1,245 @@
+
+/*
+   Author: Hubert Abedi Amoah
+   Course: WDD 131
+   Assignment: Place Webpage
+*/
+
+/* Global CSS Variables */
+:root {
+    --primary-color: #ce1126;
+    --secondary-color: #fcd116;
+    --accent-color: #006b3f;
+    --background-color: #f4f4f4;
+    --text-color: #222222;
+    --white-color: #ffffff;
+    --border-color: #dddddd;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 8px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+/* Hero Picture */
+.hero-picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Data and Weather Sections */
+.data,
+.weather {
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.data h2,
+.weather h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.data-content,
+.weather-content {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.data-content p,
+.weather-content p {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.data-content p span:first-child,
+.weather-content p span:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.data-content p span:last-child,
+.weather-content p span:last-child {
+    text-align: left;
+}
+
+/* Mobile Weather Icon */
+.weather-icon {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 1rem;
+}
+
+/* No pseudo-element icon on mobile */
+.weather h2::after {
+    content: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    border-top: 6px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 601px) {
+
+    header {
+        padding: 1rem;
+        border-bottom: 8px solid var(--secondary-color);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    /* Hero image becomes the background */
+    .hero-picture {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        min-height: 650px;
+        object-fit: cover;
+    }
+
+    /* Data and Weather Cards */
+    .data,
+    .weather {
+        position: relative;
+        z-index: 1;
+        width: 270px;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .data {
+        align-self: flex-start;
+        margin: 3rem 0 0 3rem;
+    }
+
+    .weather {
+        align-self: flex-end;
+        margin: 0 3rem 3rem 0;
+    }
+
+    .data h2,
+    .weather h2 {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .data-content p,
+    .weather-content p {
+        font-size: 0.85rem;
+    }
+
+    /* Hide mobile SVG on desktop */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Desktop weather icon using CSS pseudo-element */
+    .weather h2::after {
+        content: "⛅";
+        display: inline-block;
+        margin-left: 0.6rem;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1000px) {
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-image {
+        min-height: 700px;
+    }
+
+    .data {
+        margin-left: 5rem;
+    }
+
+    .weather {
+        margin-right: 5rem;
+    }
+}
