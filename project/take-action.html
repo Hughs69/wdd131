@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take action against malaria through awareness, education, and prevention.">
+    <meta name="author" content="Hubert Abedi Amoah">
+    <title>Take Action | Stop Malaria Africa</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">STOP MALARIA AFRICA</a>
+        <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="take-action.html" aria-current="page">Take Action</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <p class="eyebrow">BE PART OF THE SOLUTION</p>
+            <h1>Take Action Against Malaria</h1>
+            <p>Learn something new, practice prevention, and encourage others to protect themselves.</p>
+        </section>
+
+        <section class="section">
+            <h2>Daily Prevention Tips</h2>
+            <div class="tip-box">
+                <p id="dailyTip">Your malaria prevention tip will appear here.</p>
+                <button class="button" id="newTipButton" type="button">Show Another Tip</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Test Your Malaria Knowledge</h2>
+            <p>Choose an answer for each question and check your score.</p>
+
+            <form id="quizForm">
+                <fieldset>
+                    <legend>1. How is malaria usually transmitted?</legend>
+                    <label><input type="radio" name="q1" value="a" required> Through sharing food</label>
+                    <label><input type="radio" name="q1" value="b"> Through bites from infected mosquitoes</label>
+                    <label><input type="radio" name="q1" value="c"> Through handshakes</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Which measure helps prevent malaria?</legend>
+                    <label><input type="radio" name="q2" value="a" required> Sleeping under an insecticide-treated net</label>
+                    <label><input type="radio" name="q2" value="b"> Leaving containers of standing water outside</label>
+                    <label><input type="radio" name="q2" value="c"> Ignoring mosquito bites</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. What should you do if you suspect malaria?</legend>
+                    <label><input type="radio" name="q3" value="a" required> Guess the illness</label>
+                    <label><input type="radio" name="q3" value="b"> Take any medicine available</label>
+                    <label><input type="radio" name="q3" value="c"> Visit a health facility for testing</label>
+                </fieldset>
+
+                <button class="button" type="submit">Check My Answers</button>
+            </form>
+
+            <p id="quizResult" class="result" aria-live="polite"></p>
+            <p id="previousScore"></p>
+        </section>
+
+        <section class="section">
+            <h2>Share Your Thoughts</h2>
+            <p>Send us a message about malaria awareness and prevention in your community.</p>
+
+            <form id="contactForm">
+                <label for="visitorName">Your Name</label>
+                <input type="text" id="visitorName" name="visitorName" required maxlength="60">
+
+                <label for="visitorEmail">Email Address</label>
+                <input type="email" id="visitorEmail" name="visitorEmail" required>
+
+                <label for="visitorMessage">Your Message</label>
+                <textarea id="visitorMessage" name="visitorMessage" rows="5" required maxlength="500"></textarea>
+
+                <button class="button" type="submit">Submit Message</button>
+            </form>
+            <p id="formMessage" class="result" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Stop Malaria Africa | Hubert Abedi Amoah</p>
+        <a href="references.html">References and Image Credits</a>
+    </footer>
+</body>
+</html>

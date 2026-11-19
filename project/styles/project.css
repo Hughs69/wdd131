@@ -1,0 +1,359 @@
+
+/* Stop Malaria Africa - Main Stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #176b45;
+    --dark-green: #10452f;
+    --orange: #f2a900;
+    --light: #f5f8f5;
+    --dark: #202820;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: var(--orange);
+}
+
+.menu-button {
+    display: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding: 60px 7%;
+    background-color: var(--light);
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--dark-green);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero img,
+.content-image,
+.callout img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-top: 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--dark-green);
+}
+
+.section {
+    padding: 55px 7%;
+}
+
+.section h2,
+.content-section h2,
+.callout h2 {
+    color: var(--dark-green);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: var(--light);
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--orange);
+}
+
+.card h3 {
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.callout {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 50px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.callout h2 {
+    color: var(--white);
+}
+
+.button-light {
+    background-color: var(--orange);
+    color: var(--dark);
+}
+
+.button-light:hover {
+    background-color: #ffd166;
+    color: var(--dark);
+}
+
+.page-heading {
+    text-align: center;
+    background-color: var(--light);
+    padding: 55px 7%;
+}
+
+.page-heading h1 {
+    color: var(--dark-green);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 10px 0;
+}
+
+.page-heading p:last-child {
+    max-width: 700px;
+    margin: auto;
+}
+
+.content-section {
+    padding: 55px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.info-list {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+.notice {
+    background-color: #fff4d6;
+    border-left: 5px solid var(--orange);
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.tip-box {
+    background-color: var(--light);
+    border-left: 5px solid var(--green);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.tip-box p {
+    font-size: 1.2rem;
+}
+
+form {
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #b7c9bd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+fieldset label {
+    display: block;
+    margin: 12px 0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+form > label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #f2a900;
+    outline-offset: 2px;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: var(--orange);
+    display: inline-block;
+    margin-top: 8px;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+/* Tablet and mobile screens */
+@media screen and (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    .hero,
+    .content-section,
+    .callout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 35px 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section,
+    .content-section {
+        padding: 35px 6%;
+    }
+
+    .callout {
+        padding: 35px 6%;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
